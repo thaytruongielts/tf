@@ -8,7 +8,7 @@ export async function getDetailedExplanation(
   correctAnswer: string,
   type: 'TFNG' | 'YNNG'
 ) {
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+  const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || '' });
   
   const prompt = `
     You are an expert IELTS Reading instructor. 
